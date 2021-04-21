@@ -28,6 +28,19 @@
         </style>
     </head>
     <body>
+        <script>
+            function buttonclick(num){
+                document.getElementById("display").value+=num
+            }
+            function cleardisplay(){
+                document.getElementById("display").value=" "
+            }
+            function EqualClick(){
+                var text=document.getElementById("display").value;
+                var result=eval(text)
+                document.getElementById("display").value=result;
+            }
+        </script>
         <div id="main">
             <input type="text"id="display">
             
